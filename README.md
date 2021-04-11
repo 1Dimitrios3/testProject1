@@ -23,6 +23,14 @@ On your computer :
 * run "./npm install" to install necessery dependecies
 * run "./sails lift"
 
+ ## DATABASE
+
+ * There is an already populated remote DB for you to check
+ * You will need to access with models/migrate set to 'safe'
+ * To access you will need this datastore setting
+    adapter: 'sails-mysql', 
+    url: 'mysql://new:1234AB@ra1.anystream.eu:1059/dimitris?serverTimezone=Europe/Athens&useSSL=false', 
+
  ## How to navigate
  
 * First create an admin. Go to sign up page and specify "Admin" as the First Name with all other fields filled to proceed
