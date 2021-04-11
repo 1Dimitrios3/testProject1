@@ -20,6 +20,7 @@ module.exports = {
         JOIN userdetails
         ON user.id = userdetails.userId
         WHERE isTrainer = $1
+        LIMIT 4
         `
 
         var query = await sails.sendNativeQuery(_query, [1]);
