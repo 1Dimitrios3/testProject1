@@ -98,6 +98,18 @@
         font-size: .7em;
     }
 
+    #regtext {
+            z-index: 8;
+            position: absolute;
+            bottom: -115px;
+            left: -36px;
+            color: #eee;
+            font-size: 15px;
+            padding: 5px 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300; 
+        }
+
     .btn1 {
         z-index: 6;
         cursor: pointer;
@@ -159,6 +171,18 @@
 
         }
 
+        #regtext {
+            z-index: 8;
+            position: absolute;
+            bottom: -80px;
+            left: -94px;
+            color: #eee;
+            font-size: 15px;
+            padding: 5px 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300; 
+        }
+
         .btn1 {
             z-index: 6;
             cursor: pointer;
@@ -183,13 +207,16 @@
         <div class="outer">
             <div class="content">
                 <!-- <span class="bg animated fadeInDown">EXCLUSIVE</span> -->
-                <h2> Error! <br>
+                <h2> Attention! <br>
                 </h2>
                 <p class="msg">
                     <%= data%>
                 </p>
+               <a href="/signup"><p id="regtext">Not already registered >></p></a>
             </div>
+            
             <a href="<%=redirectTo%>"><button class="btn1">Continue</button></a>
+            
             <img src="/images/newfailsBanner.png" class="animated fadeInRight">
         </div>
     </div>
